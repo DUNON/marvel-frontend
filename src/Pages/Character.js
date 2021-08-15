@@ -10,7 +10,7 @@ export default function Character() {
 
   useEffect(() => {
     const flechdata = async () => {
-      const response = await axios.get(`http://localhost:4000/comics/${id}`);
+      const response = await axios.get(`https://marvel-back-app.herokuapp.com/comics/${id}`);
       setData(response.data.comics);
       setIsLoading(false);
     };

@@ -8,7 +8,7 @@ export default function Comics() {
 
     useEffect(() => {
         const flechdata = async()=>{
-            const response =await axios.get("http://localhost:4000/comics")
+            const response =await axios.get("https://marvel-back-app.herokuapp.com/comics")
             setData(response.data.results);
             setIsLoading(false)
 

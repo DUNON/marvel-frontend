@@ -9,7 +9,7 @@ export default function Characters() {
 
   useEffect(() => {
     const flechdata = async () => {
-      const response = await axios.get("http://localhost:4000/characters");
+      const response = await axios.get("https://marvel-back-app.herokuapp.com/characters");
       setData(response.data.results);
       setIsLoading(false);
     };
